@@ -1,0 +1,22 @@
+#!/bin/sh
+
+
+case $1 in
+    "build")
+        CMD="build"
+        ;;
+    "install")
+        CMD="install"
+        ;;
+    *)
+        CMD="help"
+esac
+if [ $CMD = "help" ]; then
+    /opt/bin/help
+    exit
+else
+    REPO=${2:-wlroots}
+    TAG=${3:-}
+    echo Running: \"${CMD}-${REPO} $TAG\"
+    sh -c "/opt/bin/${CMD}-${REPO} $TAG"
+fi

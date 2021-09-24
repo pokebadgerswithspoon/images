@@ -1,0 +1,6 @@
+#!/bin/sh
+TAG=${1:-1.3.0}
+cd /sway-build/wlroots
+git checkout $TAG
+meson build
+ninja -C build

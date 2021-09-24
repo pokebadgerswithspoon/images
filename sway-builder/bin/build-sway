@@ -1,0 +1,6 @@
+#!/bin/sh
+TAG=${1:-1.5.1}
+cd /sway-build/sway
+git checkout $TAG
+meson build
+ninja -C build
