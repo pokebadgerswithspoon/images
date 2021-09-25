@@ -16,5 +16,6 @@ RUN mkdir -p /backups
 VOLUME /backups/mysql /etc/mysql
 WORKDIR /backups/mysql
 
+USER nobody
 ENTRYPOINT [ "/usr/bin/mariabackup" ]
 
