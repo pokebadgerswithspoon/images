@@ -1,0 +1,4 @@
+domain=example.com
+socket=inet:8891@localhost
+reportAddress=postmaster@example.com
+sendReports=yes
