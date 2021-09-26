@@ -1,0 +1,5 @@
+user = ${user}
+password = ${password}
+hosts = ${host}
+dbname = mail
+query = SELECT 1 FROM mailbox WHERE username='%s' AND active = '1'
