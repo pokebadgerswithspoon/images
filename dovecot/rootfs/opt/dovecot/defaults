@@ -1,0 +1,5 @@
+#Env defaults
+host=mysql
+#db=db
+#user=user
+#password=password
