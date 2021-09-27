@@ -1,6 +1,7 @@
 FROM alpine:3.12
 
-RUN apk add postfix postfix-mysql gettext cyrus-sasl
+RUN apk add postfix postfix-mysql gettext cyrus-sasl libsasl cyrus-sasl-plain cyrus-sasl-login  \
+    && rm -rf /var/cache/apk/*
 
 RUN postconf -e "virtual_mailbox_domains = proxy:mysql:/etc/postfix/mysql/virtual_mailbox_domains.cf" \
     && postconf -e "virtual_mailbox_maps = proxy:mysql:/etc/postfix/mysql/virtual_mailbox_maps.cf" \
