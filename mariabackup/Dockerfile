@@ -6,7 +6,7 @@
 #     && apt-get clean \
 #     && rm -rf /var/lib/apt/lists/*
 
-FROM alpine:3
+FROM alpine:20220316
 
 RUN apk update \
     && apk add mariadb-backup \
