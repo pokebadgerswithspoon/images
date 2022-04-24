@@ -1,4 +1,4 @@
-FROM debian:10.6-slim
+FROM debian:11.3-slim
 
 LABEL maintainer "ugeek. ugeekpodcast@gmail.com" 
 
