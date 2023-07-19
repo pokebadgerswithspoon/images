@@ -1,4 +1,4 @@
-FROM alpine:3.12
+FROM alpine:3.18
 
 RUN apk add dovecot dovecot-lmtpd dovecot-mysql gettext dovecot-pigeonhole-plugin \
     && rm -rf /var/cache/apk/*
