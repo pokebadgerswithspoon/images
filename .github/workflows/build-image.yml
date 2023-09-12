@@ -48,7 +48,7 @@ jobs:
         images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
     - name: Build and push Docker image
-      uses: docker/build-push-action@v4
+      uses: docker/build-push-action@v5
       with:
         push: ${{ github.event_name != 'pull_request' }}
         context: ${{ env.IMAGE_SELECTED }}
