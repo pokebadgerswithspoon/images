@@ -1,4 +1,4 @@
-FROM php:7.4-apache
+FROM php:8.3-apache
 
 ENV ROUNDCUBEMAIL_VERSION 1.4.11
 # Define the GPG key used for the bundle verification process
