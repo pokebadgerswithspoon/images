@@ -14,4 +14,7 @@ echo "Current /media owner is $mediaowner"
 if [ "$mediaowner" != "www-data" ]
 then
     chown -R www-data:www-data /media
+	chmod -R 750 /media
 fi
+su user
+
