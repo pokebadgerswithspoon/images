@@ -1,4 +1,4 @@
-FROM bookwork:12-slim
+FROM bookworm:12-slim
 
 LABEL maintainer "lauri"
 
