@@ -1,4 +1,4 @@
-FROM bookworm:12-slim
+FROM debian:12-slim
 
 LABEL maintainer "lauri"
 
