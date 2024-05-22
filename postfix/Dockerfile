@@ -1,4 +1,4 @@
-FROM alpine:3.18
+FROM alpine:3.20
 
 RUN apk add postfix postfix-mysql gettext cyrus-sasl libsasl cyrus-sasl-plain cyrus-sasl-login  \
     && rm -rf /var/cache/apk/*
